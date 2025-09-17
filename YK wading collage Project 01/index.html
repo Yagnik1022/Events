@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EventFlow Pro - Professional Event Management Platform">
+  <meta name="keywords" content="event management, event planning, conferences, workshops, booking system">
+  <meta name="author" content="EventFlow Pro">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="EventFlow Pro - Professional Event Management">
+  <meta property="og:description" content="Streamline your event planning with our professional event management platform">
+  <meta property="og:image" content="/assets/images/logo/og-image.jpg">
+  <meta property="og:url" content="https://eventflowpro.com">
+  <meta property="og:type" content="website">
+  
+  <title>EventFlow Pro - Professional Event Management Platform</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/themes.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/forms.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/logo/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+  
+  <!-- Header Component (will be loaded via JavaScript) -->
+  <header id="site-header" class="site-header"></header>
+  
+  <!-- Mobile Navigation (will be loaded via JavaScript) -->
+  <div id="mobile-nav-container"></div>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title animate-fade-in">Streamline Your Event Management</h1>
+          <p class="hero-subtitle animate-fade-in-delay-1">Create, manage, and promote your events with our all-in-one platform</p>
+          <div class="hero-cta animate-fade-in-delay-2">
+            <a href="/pages/events.html" class="btn btn-primary btn-lg">Explore Events</a>
+            <a href="/pages/create-event.html" class="btn btn-outline btn-lg">Create Event</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span class="scroll-text">Scroll Down</span>
+        <span class="scroll-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14"></path>
+            <path d="M19 12l-7 7-7-7"></path>
+          </svg>
+        </span>
+      </div>
+    </section>
+    
+    <!-- Featured Events Section -->
+    <section class="featured-events-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Events</h2>
+          <p class="section-subtitle">Discover upcoming events that match your interests</p>
+        </div>
+        
+        <div class="featured-events-carousel">
+          <!-- Event cards will be dynamically loaded from sample-events.json -->
+          <div class="event-card">
+            <div class="event-card-image">
+              <img src="/assets/images/events/conference-1.jpg" alt="Tech Conference 2025">
+              <span class="event-category">Conference</span>
+            </div>
+            <div class="event-card-content">
+              <h3 class="event-title">Tech Conference 2025</h3>
+              <div class="event-meta">
+                <span class="event-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  Oct 15, 2025
+                </span>
+                <span class="event-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  New York
+                </span>
+              </div>
+              <p class="event-description">Annual technology conference featuring industry leaders and innovative showcases.</p>
+              <div class="event-footer">
+                <span class="event-price">$299</span>
+                <a href="/pages/event-details.html?id=1" class="btn btn-sm btn-outline">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="event-card">
+            <div class="event-card-image">
+              <img src="/assets/images/events/workshop-1.jpg" alt="UX Design Workshop">
+              <span class="event-category">Workshop</span>
+            </div>
+            <div class="event-card-content">
+              <h3 class="event-title">UX Design Workshop</h3>
+              <div class="event-meta">
+                <span class="event-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  Nov 5, 2025
+                </span>
+                <span class="event-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  San Francisco
+                </span>
+              </div>
+              <p class="event-description">Hands-on workshop for UX designers to learn the latest techniques and tools.</p>
+              <div class="event-footer">
+                <span class="event-price">$149</span>
+                <a href="/pages/event-details.html?id=2" class="btn btn-sm btn-outline">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="event-card">
+            <div class="event-card-image">
+              <img src="/assets/images/events/concert-1.jpg" alt="Summer Music Festival">
+              <span class="event-category">Concert</span>
+            </div>
+            <div class="event-card-content">
+              <h3 class="event-title">Summer Music Festival</h3>
+              <div class="event-meta">
+                <span class="event-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  Jul 20, 2025
+                </span>
+                <span class="event-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Austin
+                </span>
+              </div>
+              <p class="event-description">Three-day music festival featuring top artists across multiple genres.</p>
+              <div class="event-footer">
+                <span class="event-price">$199</span>
+                <a href="/pages/event-details.html?id=3" class="btn btn-sm btn-outline">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-footer text-center">
+          <a href="/pages/events.html" class="btn btn-primary">View All Events</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section section-padding bg-secondary">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">Comprehensive event management solutions for every need</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Event Planning</h3>
+            <p class="service-description">Comprehensive event planning services from concept to execution, tailored to your specific needs.</p>
+            <a href="/pages/services.html#event-planning" class="service-link">Learn More</a>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="service-title">Marketing & Promotion</h3>
+            <p class="service-description">Strategic marketing services to maximize attendance and engagement for your events.</p>
+            <a href="/pages/services.html#marketing" class="service-link">Learn More</a>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Attendee Management</h3>
+            <p class="service-description">Streamlined registration, check-in, and attendee communication systems for seamless experiences.</p>
+            <a href="/pages/services.html#attendee-management" class="service-link">Learn More</a>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Virtual Events</h3>
+            <p class="service-description">Full-service virtual and hybrid event solutions with interactive features and technical support.</p>
+            <a href="/pages/services.html#virtual-events" class="service-link">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="section-footer text-center">
+          <a href="/pages/services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section class="stats-section section-padding">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-counter">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="stat-number" data-count="15000">15,000+</div>
+            <div class="stat-label">Happy Attendees</div>
+          </div>
+          
+          <div class="stat-counter">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="stat-number" data-count="500">500+</div>
+            <div class="stat-label">Events Organized</div>
+          </div>
+          
+          <div class="stat-counter">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+            </div>
+            <div class="stat-number" data-count="98">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          
+          <div class="stat-counter">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+            <div class="stat-number" data-count="25">25+</div>
+            <div class="stat-label">Cities Covered</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding bg-secondary">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Hear from event organizers who've worked with us</p>
+        </div>
+        
+        <div class="testimonials-carousel">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"EventFlow Pro transformed our annual conference. Their platform streamlined registration, attendee management, and post-event analytics. We saw a 40% increase in attendance and overwhelmingly positive feedback."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="/assets/images/team/testimonial-1.jpg" alt="Sarah Johnson">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Sarah Johnson</h4>
+                <p class="author-title">Marketing Director, TechCorp</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"As a first-time event organizer, I was overwhelmed until I found EventFlow Pro. Their intuitive platform and responsive support team made the entire process seamless. I couldn't be happier with the results!"</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="/assets/images/team/testimonial-2.jpg" alt="Michael Chen">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Michael Chen</h4>
+                <p class="author-title">Founder, StartUp Summit</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"We've used multiple event platforms before, but EventFlow Pro stands out for its comprehensive features and user-friendly interface. It's become an essential tool for all our corporate events."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="/assets/images/team/testimonial-3.jpg" alt="Emily Rodriguez">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Emily Rodriguez</h4>
+                <p class="author-title">Events Manager, Global Enterprises</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section section-padding">
+      <div class="container">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2 class="newsletter-title">Stay Updated</h2>
+            <p class="newsletter-description">Subscribe to our newsletter for the latest event trends, tips, and exclusive offers.</p>
+          </div>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="newsletter-consent" required>
+              <label class="form-check-label" for="newsletter-consent">I agree to receive marketing emails and can unsubscribe at any time.</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer Component (will be loaded via JavaScript) -->
+  <footer id="site-footer" class="site-footer"></footer>
+  
+  <!-- JavaScript Files -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/theme-toggle.js"></script>
+  <script src="/assets/js/auth.js"></script>
+  <script src="/assets/js/events.js"></script>
+  <script src="/assets/js/storage.js"></script>
+  <script src="/assets/js/animations.js"></script>
+  <script src="/assets/js/navigation.js"></script>
+  <script src="/assets/js/utils.js"></script>
+</body>
+</html>

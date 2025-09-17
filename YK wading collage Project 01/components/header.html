@@ -1,0 +1,97 @@
+<!-- 
+  EventFlow Pro - Header Component
+  This component contains the site header with navigation, theme toggle, and authentication buttons
+-->
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="/index.html" class="logo-link">
+          <img src="/assets/images/logo/logo-light.svg" alt="EventFlow Pro" class="logo logo-light">
+          <img src="/assets/images/logo/logo-dark.svg" alt="EventFlow Pro" class="logo logo-dark">
+        </a>
+      </div>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle-icon theme-toggle-icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle-icon theme-toggle-icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Authentication Buttons (shown when logged out) -->
+        <div class="auth-buttons logged-out-view">
+          <a href="/pages/login.html" class="btn btn-outline">Sign In</a>
+          <a href="/pages/register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+
+        <!-- User Menu (shown when logged in) -->
+        <div class="user-menu logged-in-view">
+          <button class="user-menu-toggle" aria-label="Open user menu" aria-expanded="false">
+            <div class="user-avatar">
+              <span class="user-initials">JD</span>
+            </div>
+          </button>
+          <div class="user-dropdown">
+            <div class="user-dropdown-header">
+              <p class="user-name">John Doe</p>
+              <p class="user-email">john.doe@example.com</p>
+            </div>
+            <ul class="user-dropdown-menu">
+              <li><a href="/pages/dashboard.html">Dashboard</a></li>
+              <li><a href="/pages/profile.html">Profile</a></li>
+              <li><a href="/pages/booking-history.html">My Bookings</a></li>
+              <li><a href="/pages/create-event.html">Create Event</a></li>
+              <li><a href="#" class="logout-button">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
